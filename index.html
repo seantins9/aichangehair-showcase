@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>AIChangeHair Showcase</title>
+    <meta name="description" content="A public showcase page for AIChangeHair, an AI hairstyle changer and hair color preview tool.">
+    <link rel="canonical" href="https://seantins9.github.io/aichangehair-showcase/">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #172026;
+        --muted: #5c6770;
+        --line: #d7dde3;
+        --paper: #ffffff;
+        --wash: #f5f7f9;
+        --accent: #0f8b8d;
+        --accent-strong: #0c6f71;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--wash);
+      }
+
+      main {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      .shell {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+        gap: 32px;
+        align-items: center;
+        padding: 32px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+        font-weight: 700;
+      }
+
+      .brand img {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2rem, 7vw, 4.5rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      p {
+        max-width: 620px;
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      a.product-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        color: #ffffff;
+        background: var(--accent);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      a.product-link:hover {
+        background: var(--accent-strong);
+      }
+
+      .preview {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+      }
+
+      @media (max-width: 760px) {
+        main {
+          padding: 24px 0;
+        }
+
+        .shell {
+          grid-template-columns: 1fr;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="shell" aria-label="AIChangeHair product showcase">
+        <div>
+          <div class="brand">
+            <img src="https://aichangehair.com/logo-80.png" alt="AIChangeHair logo">
+            <span>AIChangeHair</span>
+          </div>
+          <h1>AI hair previews for real decisions</h1>
+          <p>AIChangeHair helps people preview hair colors and hairstyles from a portrait while keeping the face, pose, clothing, lighting, and background stable.</p>
+          <a class="product-link" href="https://aichangehair.com/">AI hairstyle changer</a>
+        </div>
+        <img class="preview" src="https://aichangehair.com/preview.jpg" alt="AIChangeHair product preview">
+      </section>
+    </main>
+  </body>
+</html>
